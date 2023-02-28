@@ -1,7 +1,7 @@
 # Ocean SPA
 Single page app (SPA) for multimedia course project.
 
-# Content Draft
+## Content Draft
 https://docs.google.com/document/d/1AbyUaKzSvWRDnHWqLlTsGJaNC_2AOT8gtCvQxFP6z7U/edit
 
 ## Group members:
