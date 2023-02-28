@@ -142,6 +142,10 @@ a:hover { color: #FF0; }
   background-size: cover;
 }
 
+.first-content {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 .baner-content {
   padding-top: 30vh;
@@ -151,11 +155,11 @@ a:hover { color: #FF0; }
 
 .baner-content h1 {
   margin-top: 0px;
-  font-size: 128px;
+  font-size: 98px;
   color: #fff;
   font-weight: 900;
   text-transform: uppercase;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .baner-content em {
@@ -168,7 +172,7 @@ a:hover { color: #FF0; }
   display: inline-block;
   margin-top: -20px;
   font-weight: 300;
-  font-size: 48px;
+  font-size: 27px;
   color: #fff;
 }
 
