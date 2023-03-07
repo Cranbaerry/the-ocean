@@ -35,13 +35,13 @@ https://templatemo.com/tm-526-vanilla
           <a class="nav-link" href="#portfolio"><span>Facts</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#services"><span>Services</span></a>
+          <a class="nav-link" href="#services"><span>Features</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#our-story"><span>Our Story</span></a>
+          <a class="nav-link" href="#our-story"><span>Challenges</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact-us"><span>Contact Us</span></a>
+          <a class="nav-link" href="#contact-us"><span>Solutions</span></a>
         </li>
       </ul>
     </div>
@@ -229,44 +229,66 @@ https://templatemo.com/tm-526-vanilla
               </div>
               <div class="col-md-6">
                 <div class="service-item">
-                  <h4>Fish</h4>
-                  <div class="line-dec"></div>
-                  <p>
-                    One of the most easily recognized and well known living
-                    forms on the ocean, with the estimation of 33.000 species of
-                    fish, ranging from tiny seahorses to enormous whale sharks.
-                    Fish plays an important role in the marine ecosystem, as
-                    they are key food sources for many other species, and they
-                    also help regulate populations of other marine animals by
-                    consuming them.
-                  </p>
+                  <div class="card-inner">
+                    <div class="card-face card-face-front">
+                      <h4>Fish</h4>
+                      <div class="line-dec"></div>
+                      <p>
+                        One of the most easily recognized and well known living
+                        forms on the ocean, with the estimation of 33.000
+                        species of fish, ranging from tiny seahorses to enormous
+                        whale sharks. Fish plays an important role in the marine
+                        ecosystem, as they are key food sources for many other
+                        species, and they also help regulate populations of
+                        other marine animals by consuming them.
+                      </p>
+                    </div>
+                    <div class="card-face card-face-back">
+                      <img src="img/fishes.jpg" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="service-item">
-                  <h4>Corals</h4>
-                  <div class="line-dec"></div>
-                  <p>
-                    Tiny, stationary animals that are built from accumulation of
-                    calcium carbonate skeletons produced by coral polyps with
-                    complex structures, forming the basis for reef ecosystems.
-                    Plays the role of providing critical habitat for a wide
-                    range of marine species.
-                  </p>
+                  <div class="card-inner">
+                    <div class="card-face card-face-front">
+                      <h4>Corals</h4>
+                      <div class="line-dec"></div>
+                      <p>
+                        Tiny, stationary animals that are built from
+                        accumulation of calcium carbonate skeletons produced by
+                        coral polyps with complex structures, forming the basis
+                        for reef ecosystems. Plays the role of providing
+                        critical habitat for a wide range of marine species.
+                      </p>
+                    </div>
+                    <div class="card-face card-face-back">
+                      <img src="img/corals.jpg" />
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="service-item">
-                  <h4>Other Groups of Marine Animals</h4>
-                  <div class="line-dec"></div>
-                  <p>
-                    Other groups of marine animals, for instance marine mammals,
-                    whales, dolphins, seals; as well as wide range invertebrates
-                    like jellyfish, crabs, or squid; and marine microorganisms,
-                    phytoplankton and zooplankton also play an important role in
-                    marine ecosystems, forming the base of the ocean food chain
-                    and producing much of the oxygen we breathe.
-                  </p>
+                  <div class="card-inner">
+                    <div class="card-face card-face-front">
+                      <h4>Other Groups of Marine Animals</h4>
+                      <div class="line-dec"></div>
+                      <p>
+                        Other groups of marine animals, for instance marine
+                        mammals, whales, dolphins, seals; as well as wide range
+                        invertebrates like jellyfish, crabs, or squid; and
+                        marine microorganisms, phytoplankton and zooplankton
+                        also play an important role in marine ecosystems,
+                        forming the base of the ocean food chain and producing
+                        much of the oxygen we breathe.
+                      </p>
+                    </div>
+                    <div class="card-face card-face-back">
+                      <img src="img/turtle.jpg" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -548,6 +570,19 @@ https://templatemo.com/tm-526-vanilla
           this.classList.toggle("active");
         });
       }
+    </script>
+    <script>
+      const cards = document.querySelectorAll(".card-inner");
+
+      let cardIsFlipped = false;
+
+      function flipCard() {
+        this.classList.toggle("is-flipped");
+      }
+
+      cards.forEach(function (card) {
+        card.addEventListener("click", flipCard);
+      });
     </script>
   </body>
 </html>
