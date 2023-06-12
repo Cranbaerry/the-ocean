@@ -155,6 +155,8 @@ a:hover {
   background-image: url(../img/1st-section.jpg);
 }
 
+
+
 .baner-content h1 {
   margin-top: 0px;
   font-size: 98px;
@@ -183,6 +185,11 @@ a:hover {
 }
 
 .service-content {
+  padding-top: 10vh;
+  background-image: url(../img/2nd-section.jpg);
+}
+
+/* .service-content {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15vh;
@@ -191,12 +198,13 @@ a:hover {
   min-height: 100vh;
   background-size: cover;
   background-position: center center;
-}
+} */
 
 .service-content .left-text h4 {
   font-size: 24px;
   font-weight: 500;
-  color: #fff;
+  color: #fff;  
+  text-align: left;
 }
 
 h4,
@@ -299,6 +307,9 @@ h4,
 .projects-content {
   padding-top: 20vh;
   background-image: url(../img/3rd-section.jpg);
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-size: cover;
 }
 
 .projects-content .item img {
@@ -333,6 +344,23 @@ h4,
   opacity: 1;
   display: inline-block;
 }
+
+.owl-wrapper {
+  height: 400px;
+}
+
+.owl-item, .item, .testimonials-item, .text-content {
+  height: 100%;
+}
+
+.testimonials-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
 
 .owl-page span {
   display: block;
@@ -399,7 +427,11 @@ section {
   border: 4px solid #ff7d27;
 }
 
-.tabgroup div {
+.tabgroup div img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .tabgroup p {
@@ -636,7 +668,7 @@ body.lb-disable-scrolling {
 
 .lb-outerContainer {
   position: relative;
-  *zoom: 1;
+  zoom: 1;
   width: 250px;
   height: 250px;
   margin: 0 auto;
@@ -735,7 +767,7 @@ body.lb-disable-scrolling {
 .lb-dataContainer {
   margin: 0 auto;
   padding-top: 5px;
-  *zoom: 1;
+  zoom: 1;
   width: 100%;
   -moz-border-radius-bottomleft: 4px;
   -webkit-border-bottom-left-radius: 4px;
@@ -891,4 +923,20 @@ body.lb-disable-scrolling {
 .accordion .content-bx.active .content {
   height: auto;
   padding: 10px;
+}
+
+.github-link a {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.github-link a:hover {
+  color: #ff7d27;
 }
